@@ -1,24 +1,21 @@
 <app-nav-bar></app-nav-bar>
 <div class="center-logo text-center">
-  <h1>My recommender System</h1>
-  <p>Create User page</p>
 </div>
 
 <div class="container">
   <div class="row">
-    <h4>Create User:</h4>
+    <h4>계정 생성</h4>
     <div class="col-sm-12">
       <form action="/action_page.php">
-
         <div class="form-group">
-          <label for="email">Email address:</label>
-          <input type="email" #email class="form-control" placeholder="email" id="email">
+<!--          <label for="email">Email address:</label>-->
+          <input type="email" #email class="form-control" placeholder="아이디" id="email">
         </div>
         <div class="form-group">
-          <label for="pwd">Password:</label>
-          <input type="password" #password class="form-control" placeholder="password" id="pwd">
+<!--          <label for="pwd">Password:</label>-->
+          <input type="password" #password class="form-control" placeholder="비밀번호" id="pwd">
         </div>
-        <button routerLink="/" type="button" (click)="signup(email.value, password.value)" class="btn btn-primary">Submit</button>
+        <button routerLink="/" type="button" (click)="signup(email.value, password.value)" class="btn btn-primary">회원가입하기</button>
       </form>
     </div>
   </div>

@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import {AuthService} from '../auth.service';
 
 @Component({
   selector: 'app-home',
@@ -8,12 +7,9 @@ import {AuthService} from '../auth.service';
 })
 export class HomeComponent implements OnInit {
 
-  constructor(private authService: AuthService) { }
+  constructor() { }
 
   ngOnInit(): void {
   }
-  // tslint:disable-next-line:typedef
-  login(email, password) {
-    this.authService.login(email, password);
-  }
+
 }
