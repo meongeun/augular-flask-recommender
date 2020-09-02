@@ -1,11 +1,14 @@
 /* You can add global styles to this file, and also import other style files */
 @import '~bootstrap/dist/css/bootstrap.min.css';
 
-.jumbotron {
+.center-logo {
+  margin: 30px auto;
   background-image: url("./assets/images/Coding_logo_Final.png");
   background-size: 100%;
-  width: 20%;
-  height: 10px;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 40vw;
+  height: 20vh;
   border-radius: 0px;
   color: white;
   text-shadow: 2px 2px 5px black;

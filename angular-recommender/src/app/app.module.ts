@@ -14,12 +14,14 @@ import {environment} from '../environments/environment';
 import {AuthService} from './auth.service';
 import { SignupComponent } from './signup/signup.component';
 import {FormsModule} from '@angular/forms';
+import { LoginComponent } from './login/login.component';
 
 const appRoutes: Routes = [
   {path: '', component: HomeComponent},
   {path: 'navbar', component: NavBarComponent},
   {path: 'dashboard', component: DashboardComponent},
-  {path: 'signup', component: SignupComponent}
+  {path: 'signup', component: SignupComponent},
+  {path: 'login', component: LoginComponent}
 ];
 
 @NgModule({
@@ -28,7 +30,8 @@ const appRoutes: Routes = [
     HomeComponent,
     NavBarComponent,
     DashboardComponent,
-    SignupComponent
+    SignupComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,
