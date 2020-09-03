@@ -1,4 +1,4 @@
-<div class="center-logo text-center">
+<div class="center-logo text-center" routerLink="/">
 </div>
 <div class="container">
   <div class="row">
@@ -17,7 +17,7 @@
             <input class="form-check-input" type="checkbox"> Remember me
           </label>
         </div>
-        <button routerLink="/dashboard" (click)="login(email.value, password.value)" type="button" class="btn btn-primary">로그인</button>
+        <button routerLink="/" (click)="login(email.value, password.value)" type="button" class="btn btn-primary">로그인</button>
         <button routerLink="/signup" type="button" class="btn btn-primary">회원가입</button>
       </form>
     </div>

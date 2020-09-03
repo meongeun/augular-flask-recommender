@@ -29,7 +29,7 @@ def do_Predict():
     cross_validate(algo, data, measures=['RMSE', 'MAE'], cv=5, verbose=True)
     return get_top_n(predictions)
 
-def get_top_n(predictions, n = 20):
+def get_top_n(predictions, n = 5):
     top_n = defaultdict(list)
     for uid, iid, true_r, est, _ in predictions:
         top_n[uid].append((iid, est))

@@ -15,13 +15,18 @@ import {AuthService} from './auth.service';
 import { SignupComponent } from './signup/signup.component';
 import {FormsModule} from '@angular/forms';
 import { LoginComponent } from './login/login.component';
+import { RankComponent } from './rank/rank.component';
+import { SearchlectureComponent } from './searchlecture/searchlecture.component';
+import { LecNavBarComponent } from './lec-nav-bar/lec-nav-bar.component';
 
 const appRoutes: Routes = [
   {path: '', component: HomeComponent},
   {path: 'navbar', component: NavBarComponent},
   {path: 'dashboard', component: DashboardComponent},
   {path: 'signup', component: SignupComponent},
-  {path: 'login', component: LoginComponent}
+  {path: 'login', component: LoginComponent},
+  {path: 'rank', component: RankComponent},
+  {path: 'searchlecture', component: SearchlectureComponent}
 ];
 
 @NgModule({
@@ -31,7 +36,10 @@ const appRoutes: Routes = [
     NavBarComponent,
     DashboardComponent,
     SignupComponent,
-    LoginComponent
+    LoginComponent,
+    RankComponent,
+    SearchlectureComponent,
+    LecNavBarComponent
   ],
   imports: [
     BrowserModule,

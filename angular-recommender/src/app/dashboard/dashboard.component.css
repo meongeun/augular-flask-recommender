@@ -87,3 +87,8 @@
   -moz-pointer-events: none;
   pointer-events: none;
 }
+
+.dashboard-container {
+  margin-left: 30px;
+  margin-top: 10px;
+}

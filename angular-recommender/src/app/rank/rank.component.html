@@ -1,10 +1,10 @@
 <div class="logo text-center">
 </div>
 <app-nav-bar></app-nav-bar>
-<div class="dashboard-container">
+<div class="rank-container">
   <div class="row">
     <div class="col-sm-3">
-    <h3>오늘의 추천 컨텐츠</h3>
+      <h3>프로그램 주제별 랭킹</h3>
     </div>
   </div>
   <div class="row">
@@ -14,8 +14,8 @@
         <div class="loader"></div>
       </div>
     </div>
-    <div class="col-sm-3" *ngFor="let person of fetchedRecipe; let i = index">
-<!--      <label>{{i+1}}위</label>-->
+    <div class="col-sm-12" *ngFor="let person of fetchedRecipe; let i = index">
+      <label>{{i+1}}위</label>
       <div class="card">
         <img class="card-img-top" src="https://www.codeit.kr/static/images/course/catalog__seqId--26.png"
              alt="Card image" height="150px;">
@@ -23,7 +23,7 @@
           <h4 class="card-title">{{person[0]}}</h4>
           <!--          {{person[1]}}-->
           <p class="card-text"> good good good good good good good good good good good good</p>
-          <a href="#{{i}}" data-toggle="modal" class="btn btn-primary">Rate Lectures</a>
+          <a href="#{{i}}" data-toggle="modal" class="btn btn-primary">강의 들으러 가기</a>
         </div>
       </div>
       <!-- The Modal -->

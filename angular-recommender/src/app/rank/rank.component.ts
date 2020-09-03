@@ -1,13 +1,14 @@
-import { Component, Injectable, OnInit } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import {AuthService} from '../auth.service';
 
 @Component({
-  selector: 'app-home',
-  templateUrl: './home.component.html',
-  styleUrls: ['./home.component.css']
+  selector: 'app-rank',
+  templateUrl: './rank.component.html',
+  styleUrls: ['./rank.component.css']
 })
-export class HomeComponent implements OnInit {
+export class RankComponent implements OnInit {
+
   configUrl = 'http://127.0.0.1:5000/predictions/';
   configGetUrl = 'http://127.0.0.1:5000/getUser/';
   rateUrl = 'http://127.0.0.1:5000/rateItem/';
