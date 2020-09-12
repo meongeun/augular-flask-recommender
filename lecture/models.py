@@ -18,3 +18,12 @@ class Lecture(models.Model):
     class Meta:
         managed = False
         db_table = 'lecture'
+
+
+class Category(models.Model):
+    categoryidx = models.AutoField(db_column='categoryIdx', primary_key=True)  # Field name made lowercase.
+    categoryname = models.CharField(db_column='categoryName', max_length=20)  # Field name made lowercase.
+
+    class Meta:
+        managed = False
+        db_table = 'category'
